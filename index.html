@@ -1,0 +1,70 @@
+<!-- This whole project is made by Aniket Biswas | LinkedIn - https://www.linkedin.com/in/thesmartaniket -->
+<!-- index.html | The main linker -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="/style/sytel.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- top navigation bar -->
+    <nav style="background-color: darksalmon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='../index.html';">home</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='html/about.html'">about me</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">projects</button>
+            <div class="dropdown-content">
+              <a href="html/music.html">music projects</a>
+              <a href="html/tech.html">tech projects</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href = 'html/contact.html';">contact me</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">profiles</button>
+            <div class="dropdown-content">
+                <a target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a>
+                <a target="_blank" href="https://www.github.com/thesmartaniket">Github</a>
+                <a target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket/thesmartaniket.github.io')">mySource</button>
+        </div>
+    </nav> 
+    <!-- main template -->
+    <main>
+        <div class="img_round">
+            <img src="/img/profile.jpeg" width="200" style="border-radius: 50%; margin-left: 10px; float:left;" alt="profile">
+            <div style="font-size: xx-large; text-align: center; padding: 80px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Hi, I am Aniket Biswas!</div>
+        </div>
+    </main>
+
+    <main style="text-align: center; background-color:darksalmon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.open('/pdf/profile.pdf')">Download CV</button>
+        </div>
+        <p>
+            Checkout my profiles and repositories!
+        </p>
+    </main>
+    <!-- dummy main template for space occupying -->
+    <main style="padding-bottom: 200px;">
+    </main>
+    <!-- bottom navigation bar -->
+    <nav style="text-align: center; margin-top: 10px; background-color: darksalmon;">
+        <div class="dropdown">
+            <button class="dropbtn">All rights reserved | V.0.2</button>
+        </div>
+    </nav>
+</body>
+</html>
