@@ -1,6 +1,6 @@
 # Personal Website
 An only HTML & CSS based personal website coded and designed by me.<br>
-Wanna made your own? First check it out [here](https://thesmartaniket.github.io) in action.
+Wanna made your own? First check it out [here](https://thesmartaniket.github.io) in action. [Desktop View Recommended]
 
 # How to use?
 First clone the repo using `git clone https://www.github.com/thesmartaniket/thesmartaniket.github.io`<br>
