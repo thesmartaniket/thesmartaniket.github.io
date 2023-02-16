@@ -1,5 +1,7 @@
 <!-- This whole project is made by Aniket Biswas | LinkedIn - https://www.linkedin.com/in/thesmartaniket -->
 <!-- tech.html -->
+<!-- version: V.0.3 -->
+<!-- includes mobile device support -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tech projects</title>
-    <link rel="stylesheet" href="/style/sytel.css">
+    <link rel="stylesheet" href="/style/sytle.css">
 </head>
 <body>
     <!-- top navigation bar -->
+    <header>
     <nav>
         <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='../index.html';">home</button>
+            <button class="dropbtn" onclick="window.location.href='/index.html';">home</button>
         </div>
         <div class="dropdown">
             <button class="dropbtn" onclick="window.location.href='about.html'">about me</button>
@@ -40,22 +43,39 @@
             <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket/thesmartaniket.github.io')">mySource</button>
         </div>
     </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li style="margin-top: 15px;"><a class="link_l" href="../index.html">home</a></li>
+            <li><a class="link_l" href="about.html">about</a></li>
+            <li><a class="link_l" href="music.html">music projects</a></li>
+            <li><a class="link_l" href="tech.html">tech projects</a></li>
+            <li><a class="link_l" href="contact.html">contact me</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket">Github</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket/thesmartaniket.github.io">mySource</a></li>
+        </ul>
+    </div>
+    </header>
     <!-- main template -->
     <main style="background-color: darksalmon;">
         <div class="row">
-            <div class="column">
+            <div class="column" style="margin-bottom: 150px;">
                 <div class="zoom">
                     <a target="_blank" href="https://www.github.com/thesmartaniket/letusc"><img style="border-radius: 8px;" src="/img/letusc.jpg" alt="letusc" width="180"></a>
                     <p>Let us C</p>                    
                 </div>
             </div>
-            <div class="column">
+            <div class="column" style="margin-bottom: 150px;">
                 <div class="zoom">
                     <a target="_blank" href="https://www.github.com/thesmartaniket/oopwithcpp"><img style="border-radius: 8px;" src="/img/oopwcpp.jpg" alt="oopwithcpp" width="200"></a>
                     <p>OPP with C++</p>                    
                 </div>
             </div>
-            <div class="column">
+            <div class="column" style="margin-bottom: 150px;">
                 <div class="zoom">
                     <a target="_blank" href="https://www.github.com/thesmartaniket/ast"><img style="border-radius: 8px;" src="/img/ast.png" alt="ast" width="200"></a>
                     <p>Audio Story Teller</p>                    
@@ -76,8 +96,9 @@
             <button class="dropbtn" onclick="window.open('https://www.hackerrank.com/thesmartaniket')"><img src="/img/hackerrank.png" alt="apple" width="15"> Hacker Rank</button>
         </div>                        
         <div class="dropdown">
-            <button class="dropbtn">All rights reserved | V.0.2</button>
+            <button class="dropbtn">All rights reserved | V.0.3</button>
         </div>
     </nav>    
+    <script src="/js/index.js"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 <!-- This whole project is made by Aniket Biswas | LinkedIn - https://www.linkedin.com/in/thesmartaniket -->
 <!-- contact.html -->
+<!-- version: V.0.3 -->
+<!-- includes mobile device support -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact me</title>
-    <link rel="stylesheet" href="/style/sytel.css">
+    <link rel="stylesheet" href="/style/sytle.css">
 </head>
 <body>
     <!-- top navigation bar -->
+    <header>
     <nav>
         <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='../index.html';">home</button>
+            <button class="dropbtn" onclick="window.location.href='/index.html';">home</button>
         </div>
         <div class="dropdown">
             <button class="dropbtn" onclick="window.location.href='about.html'">about me</button>
@@ -39,7 +42,24 @@
         <div class="dropdown">
             <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket/thesmartaniket.github.io')">mySource</button>
         </div>
-    </nav> 
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li style="margin-top: 15px;"><a class="link_l" href="/index.html">home</a></li>
+            <li><a class="link_l" href="about.html">about</a></li>
+            <li><a class="link_l" href="music.html">music projects</a></li>
+            <li><a class="link_l" href="tech.html">tech projects</a></li>
+            <li><a class="link_l" href="contact.html">contact me</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket">Github</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket/thesmartaniket.github.io">mySource</a></li>
+        </ul>
+    </div>
+    </header> 
     <!-- main template -->
     <main style="background-color: darksalmon; padding-bottom: 250px;">
         <h1 style="font-size: large; font-family: cursive;">Contact Me</h1>
@@ -66,8 +86,9 @@
     <!-- bottom navigation bar -->
     <nav style="text-align: center; margin-top: 10px; background-color: darksalmon;">
         <div class="dropdown">
-            <button class="dropbtn">All rights reserved | V.0.2</button>
+            <button class="dropbtn">All rights reserved | V.0.3</button>
         </div>
-    </nav>      
+    </nav>   
+    <script src="/js/index.js"></script>   
 </body>
 </html>

@@ -1,0 +1,247 @@
+/* This whole project is made by Aniket Biswas | LinkedIn - https://www.linkedin.com/in/thesmartaniket */
+/* <!-- version: V.0.3 --> */
+/* <!-- includes mobile device support --> */
+
+/*navigation bar properties*/
+nav
+{
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+}
+
+/* html properties */
+html{
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+/* body properties */
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+/* main properties */
+main
+{
+    margin-top: 10px;
+    padding:10px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+/* header properties */
+header {
+    background-color: #ffffff;
+    height: auto;
+    /* display: flex; */
+    justify-content: space-between;
+  }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(252, 201, 140);
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+margin-left: 10px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #e0aa4e;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+border-radius: 8px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+border-radius: 8px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #e5da10;}
+
+/* for column */
+.column {
+    float:left;
+    width: 15%;
+    padding: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: center;
+}
+/* for row */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* for popup zoom effect */
+.zoom {
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+/* zoom hover properties */
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* list properties */
+ul {
+    list-style: none;
+    height: 100%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+    background-color: bisque;
+    border-radius: 8px;
+  }
+  
+  /* list items containing <a></a> */
+  ul a {
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+  }
+  /* list items containing <li></li> */
+  ul li {
+    padding: 8px;
+    background-color: darksalmon;
+    border-radius: 8px;
+    width:300px;
+    text-align: center;
+  }
+  
+/* hover properties on list-items */
+  ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #e5da10;
+  }
+
+/* icon properties */
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div{
+    width: 35px;
+    height: 3px;
+    background-color: darksalmon;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+/* bar transition properties */
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px) ;
+    transform: rotate(-45deg) translate(-6px, 6px);
+    }
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* menu view on mobile when open*/
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* mobile menu properties */
+.mobile-menu {
+    display: none;
+    position: relative;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+/* list in mobile menu */
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+/* when to switch between mobile and desktop view */
+@media only screen and (max-width: 750px){
+    header nav{
+        display: none;
+    }
+
+#hamburger-icon {
+    display: block;
+  }
+
+.dropbtn {
+    background-color: rgb(252, 201, 140);
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}     
+
+.link_l{
+    display: block; 
+    width: 300px; 
+    height: 25px;
+}
+}
+
+
+.default{
+    background-color: #0000;
+    list-style-type: disc;
+    text-align: left;
+    text-decoration: none;
+    padding: auto;
+    width: auto;
+}
+
+.default:hover{
+    transform: scale(1);
+    background-color: #0000;
+}

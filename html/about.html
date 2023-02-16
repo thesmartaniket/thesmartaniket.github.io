@@ -1,5 +1,7 @@
 <!-- This whole project is made by Aniket Biswas | LinkedIn - https://www.linkedin.com/in/thesmartaniket -->
 <!-- about.html -->
+<!-- version: V.0.3 -->
+<!-- includes mobile device support -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about me</title>
-    <link rel="stylesheet" href="/style/sytel.css">
+    <link rel="stylesheet" href="/style/sytle.css">
 </head>
 <body>
     <!-- top navigation bar -->
+    <header>
     <nav>
         <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='../index.html';">home</button>
+            <button class="dropbtn" onclick="window.location.href='/index.html';">home</button>
         </div>
         <div class="dropdown">
             <button class="dropbtn" onclick="window.location.href='#'">about me</button>
@@ -40,7 +43,23 @@
             <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket/thesmartaniket.github.io')">mySource</button>
         </div>
     </nav> 
-
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li style="margin-top: 15px;"><a class="link_l" href="../index.html">home</a></li>
+            <li><a class="link_l" href="about.html">about</a></li>
+            <li><a class="link_l" href="music.html">music projects</a></li>
+            <li><a class="link_l" href="tech.html">tech projects</a></li>
+            <li><a class="link_l" href="contact.html">contact me</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket">Github</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket/thesmartaniket.github.io">mySource</a></li>
+        </ul>
+    </div>
+    </header>
     <!-- main template -->
     <main style="background-color: darksalmon;">
         <h1 style="font-family: cursive;">About Me</h1>
@@ -50,28 +69,28 @@
         <h2 style="font-family: cursive; padding: 10px; font-weight: bold;">Technical Skills</h2>
         <main>
             <ul style="font-size: large; font-family: cursive;">
-                <li>Pursuing B.Tech in Computer Science & Engineering (Business Systems).</li>
-                <li>Learned C programming (with core Computer Science concepts like memory allocations and handling, pre-processors, compilers, data structures).</li>
-                <li>Learned Linux & MacOS Bash Scripting [Unix/Unix like enviorment].</li>
-                <li>Learning C++, DSA, OOP.</li>
-                <li>Experience working with Windows, Linux [Fedora], macOS [as primary (daily driving)].</li>
+                <li class="default">Pursuing B.Tech in Computer Science & Engineering (Business Systems).</li>
+                <li class="default">Learned C programming (with core Computer Science concepts like memory allocations and handling, pre-processors, compilers, data structures).</li>
+                <li class="default">Learned Linux & MacOS Bash Scripting [Unix/Unix like enviorment].</li>
+                <li class="default">Learning C++, DSA, OOP.</li>
+                <li class="default">Experience working with Windows, Linux [Fedora], macOS [as primary (daily driving)].</li>
             </ul>
         </main>
         <h2 style="font-family: cursive; padding: 10px; font-weight: bold;">Other Skills</h2>        
         <main>
             <ul style="font-family: cursive; font-size: large;">
-                <li>Music Composing (Orchestral Arrangements/Piano Pieces/Ambient) & Production, Mixing.</li>
-                <li>Learned Music Theory (Western Classical).</li>
-                <li>Learning full symphony orchestration & arrangements , advanced harmonization & transposition.</li>
-                <li>Love tinkering with electronic stuffs, building and modifying them.</li>
+                <li class="default">Music Composing (Orchestral Arrangements/Piano Pieces/Ambient) & Production, Mixing.</li>
+                <li class="default">Learned Music Theory (Western Classical).</li>
+                <li class="default">Learning full symphony orchestration & arrangements , advanced harmonization & transposition.</li>
+                <li class="default">Love tinkering with electronic stuffs, building and modifying them.</li>
             </ul>
         </main>
         <h2 style="font-family: cursive; padding: 10px; font-weight: bold;">Other Details</h2>     
         <main>
             <ul style="font-size: large; font-family: cursive;">
-                <li>I have over 230K streams across all streaming platforms including YouTube, Amazon Music & Spotify with over 56K, 80K & 32K streams respectively.</li>
-                <li>4⭐️ Badge in C [Hacker Rank].</li>
-                <li>5⭐️ Badge in C++ [Hacker Rank].</li>
+                <li class="default">I have over 230K streams across all streaming platforms including YouTube, Amazon Music & Spotify with over 56K, 80K & 32K streams respectively.</li>
+                <li class="default">4⭐️ Badge in C [Hacker Rank].</li>
+                <li class="default">5⭐️ Badge in C++ [Hacker Rank].</li>
             </ul>
         </main>      
     </main>
@@ -79,8 +98,9 @@
     <!-- bottom navigation bar -->
     <nav style="text-align: center; margin-top: 10px; background-color: darksalmon;">
         <div class="dropdown">
-            <button class="dropbtn">All rights reserved | V.0.2</button>
+            <button class="dropbtn">All rights reserved | V.0.3</button>
         </div>
     </nav>
+    <script src="/js/index.js"></script>
 </body>
 </html>

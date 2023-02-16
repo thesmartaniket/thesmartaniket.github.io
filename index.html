@@ -1,5 +1,7 @@
 <!-- This whole project is made by Aniket Biswas | LinkedIn - https://www.linkedin.com/in/thesmartaniket -->
 <!-- index.html | The main linker -->
+<!-- version: V.0.3 -->
+<!-- includes mobile device support -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +9,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-    <link rel="stylesheet" href="/style/sytel.css">
+    <link rel="stylesheet" href="/style/sytle.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <!-- top navigation bar -->
+    <header>
     <nav style="background-color: darksalmon;">
         <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='../index.html';">home</button>
+            <button class="dropbtn" onclick="window.location.href='/index.html';">home</button>
         </div>
         <div class="dropdown">
             <button class="dropbtn" onclick="window.location.href='html/about.html'">about me</button>
@@ -22,8 +25,8 @@
         <div class="dropdown">
             <button class="dropbtn">projects</button>
             <div class="dropdown-content">
-              <a href="html/music.html">music projects</a>
-              <a href="html/tech.html">tech projects</a>
+            <a href="html/music.html">music projects</a>
+            <a href="html/tech.html">tech projects</a>
             </div>
         </div>
         <div class="dropdown">
@@ -40,7 +43,24 @@
         <div class="dropdown">
             <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket/thesmartaniket.github.io')">mySource</button>
         </div>
-    </nav> 
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li style="margin-top: 15px;"><a class="link_l" href="../index.html">home</a></li>
+            <li><a class="link_l" href="/html/about.html">about</a></li>
+            <li> <a class="link_l" href="/html/music.html">music projects</a></li>
+            <li> <a class="link_l" href="/html/tech.html">tech projects</a></li>
+            <li><a class="link_l" href="/html/contact.html">contact me</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket">Github</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a></li>
+            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket/thesmartaniket.github.io">mySource</a></li>
+        </ul>
+    </div>
+    </header>    
     <!-- main template -->
     <main>
         <div class="img_round">
@@ -58,13 +78,14 @@
         </p>
     </main>
     <!-- dummy main template for space occupying -->
-    <main style="padding-bottom: 400px;">
+    <main  style="padding-bottom: 200px;">
     </main>
     <!-- bottom navigation bar -->
     <nav style="text-align: center; margin-top: 10px; background-color: darksalmon;">
         <div class="dropdown">
-            <button class="dropbtn">All rights reserved | V.0.2</button>
+            <button class="dropbtn">All rights reserved | V.0.3</button>
         </div>
     </nav>
+    <script src="/js/index.js"></script>
 </body>
 </html>
