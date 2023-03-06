@@ -1,3 +1,8 @@
+/* <!-- This whole project is made by Aniket Biswas | LinkedIn - https://www.linkedin.com/in/thesmartaniket -->
+<!-- mobile_v.css -->
+<!-- version: V.0.4 -->
+<!-- includes mobile device support --> */
+/* css for mobile view */
 
 /* list properties */
 .mobile-menu{
@@ -27,7 +32,7 @@
     padding: 8px;
     background-color: #F9DBBB;
     border-radius: 8px;
-    width: 300px;
+    width: 80%;
     text-align: center;
 }
   

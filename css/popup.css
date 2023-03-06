@@ -1,26 +1,34 @@
+/* <!-- This whole project is made by Aniket Biswas | LinkedIn - https://www.linkedin.com/in/thesmartaniket -->
+<!-- popup.css -->
+<!-- version: V.0.4 -->
+<!-- includes mobile device support --> */
+/* css for popup */
+
 #mask {
-    position:absolute;
-    left:0;
-    top:0;
-    z-index:9000;
-    background-color:#26262c;
-    display:none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #26262c;
+    display: none;
   }  
-  #boxes .window {
-    position:absolute;
-    left:0;
-    top:0;
-    width:440px;
-    height:850px;
-    display:none;
-    z-index:9999;
-    padding:20px;
+
+#boxes .window {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 850px;
+    display: none;
+    z-index: 9999;
+    padding: 20px;
     border-radius: 5px;
     text-align: center;
-  }
-  #boxes #dialog {
-    width:450px; 
-    height:auto;
+}
+
+#boxes #dialog {
+    width: 80%; 
+    height: auto;
     padding: 10px 10px 10px 10px;
     background-color:#ffffff;
     font-size: 15pt;
@@ -29,10 +37,12 @@
   .agree:hover{
     background-color: #D1D1D1;
   }
+
   .popupoption:hover{
-   background-color:#D1D1D1;
+   background-color: #D1D1D1;
    color: green;
   }
+
   .popupoption2:hover{
    color: red;
   }
