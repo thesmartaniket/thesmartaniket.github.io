@@ -1,91 +1,94 @@
-<!-- This whole project is made by Aniket Biswas | LinkedIn - https://www.linkedin.com/in/thesmartaniket -->
-<!-- index.html | The main linker -->
-<!-- version: V.0.3 -->
-<!-- includes mobile device support -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link rel="stylesheet" href="/style/sytle.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/mobile_v.css">
+    <link rel="stylesheet" href="/css/style_img&font.css">
+    <link rel="stylesheet" href="/css/popup.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <!-- top navigation bar -->
-    <header>
-    <nav style="background-color: darksalmon;">
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='/index.html';">home</button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='html/about.html'">about me</button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">projects</button>
-            <div class="dropdown-content">
-            <a href="html/music.html">music projects</a>
-            <a href="html/tech.html">tech projects</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href = 'html/contact.html';">contact me</button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">profiles</button>
-            <div class="dropdown-content">
-                <a target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a>
-                <a target="_blank" href="https://www.github.com/thesmartaniket">Github</a>
-                <a target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket/thesmartaniket.github.io')">mySource</button>
-        </div>
-    </nav>
-    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-            <li style="margin-top: 15px;"><a class="link_l" href="../index.html">home</a></li>
-            <li><a class="link_l" href="/html/about.html">about</a></li>
-            <li> <a class="link_l" href="/html/music.html">music projects</a></li>
-            <li> <a class="link_l" href="/html/tech.html">tech projects</a></li>
-            <li><a class="link_l" href="/html/contact.html">contact me</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket">Github</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket/thesmartaniket.github.io">mySource</a></li>
-        </ul>
+    
+    <div class="main_bg">
+        <header>
+            <nav>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.location.href='/index.html';">Home</button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.location.href='html/about.html'">About me</button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Projects</button>
+                    <div class="dropdown-content">
+                        <a href="html/music.html">Music Projects</a>
+                        <a href="html/tech.html">Tech Projects</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.location.href = 'html/contact.html';">Contact me</button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Profiles</button>
+                    <div class="dropdown-content">
+                        <a target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a>
+                        <a target="_blank" href="https://www.github.com/thesmartaniket">Github</a>
+                        <a target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket/thesmartaniket.github.io')">mySource</button>
+                </div>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li class="mm_li" style="margin-top: 15px;"><a class="mm_link" href="../index.html">home</a></li>
+                    <li class="mm_li"><a class="mm_link" href="/html/about.html">about</a></li>
+                    <li class="mm_li"><a class="mm_link" href="/html/music.html">music projects</a></li>
+                    <li class="mm_li"><a class="mm_link" href="/html/tech.html">tech projects</a></li>
+                    <li class="mm_li"><a class="mm_link" href="/html/contact.html">contact me</a></li>
+                    <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a></li>
+                    <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.github.com/thesmartaniket">Github</a></li>
+                    <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a></li>
+                    <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.github.com/thesmartaniket/thesmartaniket.github.io">mySource</a></li>
+                </ul>
+            </div>        
+        </header>
     </div>
-    </header>    
-    <!-- main template -->
-    <main>
-        <div class="img_round">
-            <img src="/img/profile.jpeg" width="200" style="border-radius: 50%; margin-left: 10px; float:left;" alt="profile">
-            <div style="font-size: xx-large; text-align: center; padding: 80px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Hi, I am Aniket Biswas!</div>
+    
+    <div id="boxes">
+        <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window"> 
+            <div id="san">
+                <a href="#" class="close agree"><img src="/img/cross.png" width="25" style="float:right; margin-right: -25px; margin-top: -20px;"></a>
+                <img src="/img/item_pop.jpg" width="450px">
+            </div>
         </div>
-    </main>
+        <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
+    </div>
 
-    <main style="text-align: center; background-color:darksalmon;">
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.open('/pdf/profile.pdf')">Download CV</button>
-        </div>
-        <p>
-            Checkout my profiles and repositories!
-        </p>
-    </main>
-    <!-- dummy main template for space occupying -->
-    <main  style="padding-bottom: 200px;">
-    </main>
-    <!-- bottom navigation bar -->
-    <nav style="text-align: center; margin-top: 10px; background-color: darksalmon;">
-        <div class="dropdown">
-            <button class="dropbtn">All rights reserved | V.0.3.1</button>
-        </div>
-    </nav>
-    <script src="/js/index.js"></script>
+<main>
+    <div>
+        <img class="img_s" src="/img/profile.jpeg" width="200" alt="profile">
+        <div id="mtext" >Hi, I am Aniket Biswas!</div>
+    </div>
+</main>
+
+<div class="main_bg" style="margin-top: 50px; text-align: center;">
+    <div class="dropdown">
+        <button class="dropbtn" style="background-color: #F9DBBB; color: black;" onclick="window.location.href = 'pdf/profile.pdf';">Download CV</button>
+    </div>
+</div>
+<img src="/img/bg1.jpg" class="img_bg" alt="bg">
+<script src="/js/main.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+<script src="/js/popup.js"></script>
 </body>
 </html>

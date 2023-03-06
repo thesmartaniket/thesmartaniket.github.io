@@ -1,6 +1,6 @@
 <!-- This whole project is made by Aniket Biswas | LinkedIn - https://www.linkedin.com/in/thesmartaniket -->
 <!-- tech.html -->
-<!-- version: V.0.3 -->
+<!-- version: V.0.4 -->
 <!-- includes mobile device support -->
 <!DOCTYPE html>
 <html lang="en">
@@ -8,28 +8,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tech projects</title>
-    <link rel="stylesheet" href="/style/sytle.css">
+    <title>Tech Projects</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/mobile_v.css">
+    <link rel="stylesheet" href="/css/style_img&font.css">
+    <link rel="stylesheet" href="/css/table.css">
 </head>
 <body>
     <!-- top navigation bar -->
+<div class="main_bg">
     <header>
     <nav>
         <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='/index.html';">home</button>
+            <button class="dropbtn" onclick="window.location.href='/index.html';">Home</button>
         </div>
         <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='about.html'">about me</button>
+            <button class="dropbtn" onclick="window.location.href='about.html'">About me</button>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">projects</button>
+            <button class="dropbtn">Projects</button>
             <div class="dropdown-content">
-              <a href="music.html">music projects</a>
-              <a href="tech.html">tech projects</a>
+              <a href="music.html">Music Projects</a>
+              <a href="tech.html">Tech Projects</a>
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href = 'contact.html';">contact me</button>
+            <button class="dropbtn" onclick="window.location.href = 'contact.html';">Contact me</button>
         </div>
         <div class="dropdown">
             <button class="dropbtn">profiles</button>
@@ -43,25 +48,26 @@
             <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket/thesmartaniket.github.io')">mySource</button>
         </div>
     </nav>
-    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-            <li style="margin-top: 15px;"><a class="link_l" href="../index.html">home</a></li>
-            <li><a class="link_l" href="about.html">about</a></li>
-            <li><a class="link_l" href="music.html">music projects</a></li>
-            <li><a class="link_l" href="tech.html">tech projects</a></li>
-            <li><a class="link_l" href="contact.html">contact me</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket">Github</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket/thesmartaniket.github.io">mySource</a></li>
-        </ul>
-    </div>
-    </header>
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <ul class="mobile-menu">
+        <li class="mm_li" style="margin-top: 15px;"><a class="mm_link" href="../index.html">home</a></li>
+        <li class="mm_li"><a class="mm_link" href="/html/about.html">about</a></li>
+        <li class="mm_li"><a class="mm_link" href="/html/music.html">music projects</a></li>
+        <li class="mm_li"><a class="mm_link" href="/html/tech.html">tech projects</a></li>
+        <li class="mm_li"><a class="mm_link" href="/html/contact.html">contact me</a></li>
+        <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a></li>
+        <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.github.com/thesmartaniket">Github</a></li>
+        <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a></li>
+        <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.github.com/thesmartaniket/thesmartaniket.github.io">mySource</a></li>
+    </ul>
+</div> 
+</header>
+</div>
     <!-- main template -->
-    <main style="background-color: darksalmon;">
+    <main style="background-color: #539165; border-radius: 5px; margin-left: auto;">
         <div class="row">
             <div class="column" style="margin-bottom: 150px;">
                 <div class="zoom">
@@ -84,21 +90,9 @@
         </div>
         
         <!-- dummy for extra space occupying -->
-        <main style="background-color: darksalmon; padding-bottom: 270px;">
+        <main style="background-color: #539165; padding-bottom: 200px;">
         </main>
     </main>
-    <!-- bottom navigation bar -->
-    <nav style="text-align: center; margin-top: 10px; background-color: darksalmon;">
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket')"><img src="/img/github.png" alt="apple" width="15"> Github</button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.open('https://www.hackerrank.com/thesmartaniket')"><img src="/img/hackerrank.png" alt="apple" width="15"> Hacker Rank</button>
-        </div>                        
-        <div class="dropdown">
-            <button class="dropbtn">All rights reserved | V.0.3.1</button>
-        </div>
-    </nav>    
-    <script src="/js/index.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

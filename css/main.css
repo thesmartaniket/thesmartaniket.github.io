@@ -1,0 +1,33 @@
+html{
+    padding: 15px;
+    background-color: #F8F5E4;
+}
+
+.main_bg{
+    border-radius: 5px;
+    background-color: #539165;
+    padding: 25px;
+}
+
+nav{
+    border-radius: 10px;
+    text-align: right;
+    position: relative;
+}
+
+header{
+    height: auto;
+    justify-content: space-between;
+}
+
+main{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.music_bg{
+    background-color: #539165;
+    text-align: center; 
+    margin-left: auto;
+    border-radius: 5px;
+}

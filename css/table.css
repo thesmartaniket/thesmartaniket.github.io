@@ -1,0 +1,29 @@
+/* for column */
+.column {
+    float:left;
+    width: 15%;
+    padding: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: center;
+}
+/* for row */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* for popup zoom effect */
+.zoom {
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+/* zoom hover properties */
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

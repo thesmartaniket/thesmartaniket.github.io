@@ -8,66 +8,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about me</title>
-    <link rel="stylesheet" href="/style/sytle.css">
+    <title>About me</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/mobile_v.css">
+    <link rel="stylesheet" href="/css/style_img&font.css">
 </head>
 <body>
     <!-- top navigation bar -->
-    <header>
-    <nav>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='/index.html';">home</button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='about.html'">about me</button>
-        </div>        
-        <div class="dropdown">
-            <button class="dropbtn">projects</button>
-            <div class="dropdown-content">
-              <a href="music.html">music projects</a>
-              <a href="tech.html">tech projects</a>
+    <div class="main_bg">
+        <header>
+            <nav>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href='/index.html';">Home</button>
             </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href = 'contact.html';">contact me</button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">profiles</button>
-            <div class="dropdown-content">
-                <a target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a>
-                <a target="_blank" href="https://www.github.com/thesmartaniket">Github</a>
-                <a target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href='about.html'">About me</button>
             </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket/thesmartaniket.github.io')">mySource</button>
-        </div>
-    </nav> 
-    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-            <li style="margin-top: 15px;"><a class="link_l" href="../index.html">home</a></li>
-            <li><a class="link_l" href="about.html">about</a></li>
-            <li><a class="link_l" href="music.html">music projects</a></li>
-            <li><a class="link_l" href="tech.html">tech projects</a></li>
-            <li><a class="link_l" href="contact.html">contact me</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket">Github</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a></li>
-            <li><a class="link_l" target="_blank" href="https://www.github.com/thesmartaniket/thesmartaniket.github.io">mySource</a></li>
-        </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Projects</button>
+                <div class="dropdown-content">
+                <a href="music.html">Music Projects</a>
+                <a href="tech.html">Tech Projects</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href = 'contact.html';">Contact me</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Profiles</button>
+                <div class="dropdown-content">
+                    <a target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a>
+                    <a target="_blank" href="https://www.github.com/thesmartaniket">Github</a>
+                    <a target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="window.open('https://www.github.com/thesmartaniket/thesmartaniket.github.io')">mySource</button>
+            </div>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li class="mm_li" style="margin-top: 15px;"><a class="mm_link" href="../index.html">home</a></li>
+                    <li class="mm_li"><a class="mm_link" href="/html/about.html">about</a></li>
+                    <li class="mm_li"><a class="mm_link" href="/html/music.html">music projects</a></li>
+                    <li class="mm_li"><a class="mm_link" href="/html/tech.html">tech projects</a></li>
+                    <li class="mm_li"><a class="mm_link" href="/html/contact.html">contact me</a></li>
+                    <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.linkedin.com/in/thesmartaniket">LinkedIn</a></li>
+                    <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.github.com/thesmartaniket">Github</a></li>
+                    <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.hackerrank.com/thesmartaniket">Hacker Rank</a></li>
+                    <li class="mm_li"><a class="mm_link" target="_blank" href="https://www.github.com/thesmartaniket/thesmartaniket.github.io">mySource</a></li>
+                </ul>
+            </div>        
+        </header>
     </div>
-    </header>
     <!-- main template -->
-    <main style="background-color: darksalmon;">
+    <main class="main_bg" style="margin-left: auto;">
         <h1 style="font-family: cursive;">About Me</h1>
-        <main>
+        <main class="para_bg">
             <p style="font-size: large; font-family:cursive;">I am a self taught music composer, producer and computer programmer. From childhood I always loved playing piano, listening to musics along with learning coding, building apps, writing programs. I am very interested in Computer Science and love doing modification with Operating Systems and softwares, writing and solving programs, learning low level languages.</p>
         </main>
         <h2 style="font-family: cursive; padding: 10px; font-weight: bold;">Technical Skills</h2>
-        <main>
+        <main class="para_bg">
             <ul style="font-size: large; font-family: cursive;">
                 <li class="default">Pursuing B.Tech in Computer Science & Engineering (Business Systems).</li>
                 <li class="default">Learned C programming (with core Computer Science concepts like memory allocations and handling, pre-processors, compilers, data structures).</li>
@@ -77,7 +82,7 @@
             </ul>
         </main>
         <h2 style="font-family: cursive; padding: 10px; font-weight: bold;">Other Skills</h2>        
-        <main>
+        <main class="para_bg">
             <ul style="font-family: cursive; font-size: large;">
                 <li class="default">Music Composing (Orchestral Arrangements/Piano Pieces/Ambient) & Production, Mixing.</li>
                 <li class="default">Learned Music Theory (Western Classical).</li>
@@ -86,7 +91,7 @@
             </ul>
         </main>
         <h2 style="font-family: cursive; padding: 10px; font-weight: bold;">Other Details</h2>     
-        <main>
+        <main class="para_bg">
             <ul style="font-size: large; font-family: cursive;">
                 <li class="default">I have over 230K streams across all streaming platforms including YouTube, Amazon Music & Spotify with over 56K, 80K & 32K streams respectively.</li>
                 <li class="default">4⭐️ Badge in C [Hacker Rank].</li>
@@ -94,13 +99,7 @@
             </ul>
         </main>      
     </main>
-
-    <!-- bottom navigation bar -->
-    <nav style="text-align: center; margin-top: 10px; background-color: darksalmon;">
-        <div class="dropdown">
-            <button class="dropbtn">All rights reserved | V.0.3.1</button>
-        </div>
-    </nav>
-    <script src="/js/index.js"></script>
+    
+    <script src="/js/main.js"></script>
 </body>
 </html>
