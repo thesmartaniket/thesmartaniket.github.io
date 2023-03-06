@@ -5,29 +5,31 @@
 /* css for popup */
 
 #mask {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 9000;
     background-color: #26262c;
-    display: none;
+    display: flex;
   }  
 
 #boxes .window {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
-    width: auto;
+    width: 450px;
     height: 850px;
     display: none;
     z-index: 9999;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #boxes #dialog {
-    width: 80%; 
+    width: 450px; 
     height: auto;
     padding: 10px 10px 10px 10px;
     background-color:#ffffff;
